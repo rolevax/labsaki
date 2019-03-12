@@ -13,9 +13,9 @@ function ondraw()
   local hand = game:gethand(who)
   accelerate(mount, hand, 10 * score)
 
-  -- 呆黑必须死
+  -- 呆黑太强
   if global.daihei_set[who:index()] then
-    accelerate(mount, hand, -20)
+    accelerate(mount, hand, 20)
   end
 end
 
